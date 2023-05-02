@@ -15,10 +15,10 @@ public class Cliente {
     private long telefono;
     private String correo;
     private String direccion;
-    private String ciudad;
+    private Ciudad ciudad;
 
     //Metodos
-    public Cliente(long cc, String nombre, long telefono, String correo, String direccion, String ciudad) {
+    public Cliente(long cc, String nombre, long telefono, String correo, String direccion, Ciudad ciudad) {
         totalClientes++;
         this.numCliente = totalClientes;
         this.cc = cc;
@@ -64,7 +64,7 @@ public class Cliente {
         this.direccion = direccion;
     }
 
-    public void setCiudad(String ciudad) {
+    public void setCiudad(Ciudad ciudad) {
         this.ciudad = ciudad;
     }
 
@@ -88,7 +88,7 @@ public class Cliente {
         return direccion;
     }
 
-    public String getCiudad() {
+    public Ciudad getCiudad() {
         return ciudad;
     }
 
